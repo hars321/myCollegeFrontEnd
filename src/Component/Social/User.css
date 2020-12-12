@@ -1,0 +1,54 @@
+.User-Wrapper{
+    width: 100%;
+    border-radius: 25px;
+    background-color: white;
+}
+.User{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    
+    width: auto;
+    
+    
+    padding: 1rem;
+
+}
+.User-Images{
+    justify-content: center;
+}
+.User-Profile-Background{
+    background-color: springgreen;
+    padding:0px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.User-Profile-Background .ring{
+    position: relative;
+    top:40px;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    border:solid white;
+    background-color: white;
+    
+}
+.User-Profile-Photo img{
+    height:80px;
+    width:80px;
+}
+.User-Bio{
+    margin-top: 10px;
+}
+.User-Name{
+    display: flex;
+    justify-content: center;
+
+}
+.User-Bio-Description{
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,18 @@
+.justify-content-center{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+
+    width: 100%;
+}
+.justify-content-center .wrapper{
+    width: 100%;
+}
+.form-alert{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+
+}

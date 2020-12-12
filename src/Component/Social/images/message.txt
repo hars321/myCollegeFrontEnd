@@ -1,0 +1,97 @@
+#include <bits/stdc++.h>
+#define ll long long
+using namespace std;
+#define FIO ios_base::sync_with_stdio(0);cin.tie(0);cout.tie(0);
+
+ll noOfPositive(ll x[],ll n)
+{
+    ll sum=0;
+    for (ll j=0;j<n;j++)
+        {
+            if (x[j]>0)
+                sum++;
+        }
+        return sum; 
+}
+ll prefixsum(ll a[],ll i){
+    ll sum=0;
+    for(int j=0;j<i;j++)
+        sum += a[j];
+    return sum;
+} 
+int main()
+{
+    FIO
+        ll t,n,k;
+#ifndef ONLINE_JUDGE
+    freopen("input.txt", "r", stdin);
+    freopen("error.txt", "w", stderr);
+    freopen("output.txt", "w", stdout);
+#endif
+    cin >>t;
+
+        for(ll i=0;i<t;i++)
+        {
+            cin>>n>>k;
+            ll a[n],sum,count;
+            if (n%2==0){
+             for (int i = 0; i < n; i++){
+                if ((i+1)%2==0)
+                    a[i] = i+1;
+                else
+                    a[i] = (i+1)*(-1);    
+                }
+            }
+            else
+            {
+                for (int i = 0; i < n; i++)
+                {
+                    if ((i + 1) % 2 == 0)
+                        a[i] = (i + 1) * (-1);
+                    else
+                        a[i] = i + 1;
+                }
+            }
+            count = noOfPositive(a,n);
+            for(ll i=0;i<n;i++){    
+                if(prefixsum(a,i) >0){
+                    if (count<k){
+                        for (ll j = n-1; j >= 0; j--)
+                        {
+                            if (a[j] < 0)
+                            {
+                                a[j] *= (-1);
+                                // cout<<"this";
+                                count++;
+                            }
+                            if (count==k) {
+                                // cout<<"count"<<a[j];
+                                break;}
+                        }
+                    }
+                }
+                    else if (count>k){
+                        for (ll j = n - 1; j >= 0; j--)
+                        {
+                            if (a[j] > 0)
+                            {
+                                a[j] *= (-1);
+                                // cout<<"this";
+                                count--;
+                            }
+                            if (count == k)
+                            {
+                                // cout<<"count"<<a[j];
+                                break;
+                            }
+                        }
+                    }
+                    
+                }
+            for (ll i:a) {
+                cout<<i<<" ";
+                }
+            }
+    return 0;
+        }
+

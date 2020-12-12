@@ -1,0 +1,23 @@
+.Friends{
+    padding: 1rem;
+}
+.Friends-Wrapper{
+    background-color: white;
+    border-radius: 25px;
+}
+.rcenter, .ccenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rcenter{
+    flex-direction: row;
+}
+.ccenter{
+    flex-direction: column;
+}
+
+.b-bottom{
+    border-bottom: solid thin black;
+    padding:2px;
+}

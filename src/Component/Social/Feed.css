@@ -1,0 +1,48 @@
+.Feed-Wrapper{
+    margin: 2rem;
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.26);
+
+    
+}
+.Feed-Header{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    
+}
+.Feed{
+    padding:1rem;
+}
+.User-Image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.User-Image img{
+    height:50px;
+    width: 50px;
+}
+.User-Details{
+    
+}
+
+.Feed-Content{
+    margin-top: 1rem;
+    margin-left: 3rem;
+    margin-bottom: 2rem;
+    border-bottom: thin solid silver;
+    border-top: thin solid silver;
+
+    padding:1rem;
+}
+
+.Feed-Buttons{
+    display: flex;
+    justify-content: center;
+}
+.feed-button{
+    border-radius: 0px;
+    padding:auto;
+    margin:2px;
+    background-color: limegreen;
+}

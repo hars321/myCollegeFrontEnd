@@ -1,0 +1,58 @@
+.Post-Wrapper{
+    /* border-radius: 20%; */
+    width: 100%;
+    border-radius: 25px;
+    background-color: white;
+}
+.Post{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    
+    width: auto;
+    
+    
+    padding: 1rem;
+}
+.Add-Content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1rem;
+    margin-bottom: 0rem;
+    align-items: space-between;
+}
+.Text-input{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.Text-input textarea{
+    width: 100%;
+    padding:1rem;
+    border-radius: 25px;
+}
+.Icons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:1rem;
+}
+.Icons:hover{
+    background-color: rgba(30, 29, 31, 0.226);  
+    border-radius: 25px;  
+}
+.Post-Buttons{
+    display: flex;
+    flex-direction: center;
+    align-items: center;
+    
+}
+.Rounded-Corner{
+    border-radius: 25px;
+
+}

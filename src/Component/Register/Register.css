@@ -1,0 +1,12 @@
+.change-page{
+    display: flex;
+    justify-content: center;
+    border-top: solid white ;
+    margin-top: 2rem;
+    padding-top: 2rem;
+}
+
+.change-page >*{
+    padding-top: 0px;
+    color: white;
+}
